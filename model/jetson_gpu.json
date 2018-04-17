@@ -1,0 +1,43 @@
+{
+  "nodes": [
+    {
+      "op": "null", 
+      "name": "x", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "sqrt0", 
+      "inputs": []
+    }, 
+    {
+      "op": "tvm_op", 
+      "name": "elemwise_add0", 
+      "attrs": {
+        "flatten_data": "1", 
+        "func_name": "fuse_elemwise_add", 
+        "num_inputs": "2", 
+        "num_outputs": "1"
+      }, 
+      "inputs": [[0, 0, 0], [1, 0, 0]]
+    }
+  ], 
+  "arg_nodes": [0, 1], 
+  "node_row_ptr": [0, 1, 2, 3], 
+  "heads": [[2, 0, 0]], 
+  "attrs": {
+    "storage_allocated_bytes": ["size_t", 16], 
+    "storage_id": ["list_int", [-1, -1, 0]], 
+    "storage_inplace_index": ["list_int", [-1, -1, -1]], 
+    "shape": ["list_shape", [
+        [4], 
+        [4], 
+        [4]]], 
+    "dtype": ["list_int", [0, 0, 0]], 
+    "storage_num_not_allocated": ["size_t", 0], 
+    "dltype": ["list_str", [
+        "float32", 
+        "float32", 
+        "float32"]]
+  }
+}

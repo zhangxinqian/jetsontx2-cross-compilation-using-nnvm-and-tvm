@@ -1,0 +1,14 @@
+{
+  "tvm_version": "0.1.0", 
+  "func_info": {"fuse_elemwise_add__kernel0": {
+      "name": "", 
+      "arg_types": [
+        "handle", 
+        "handle", 
+        "handle"
+      ], 
+      "thread_axis_tags": [
+        "blockIdx.x", 
+        "threadIdx.x"
+      ]}}
+}
